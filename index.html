@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="img/clear.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" data-container>
+        <div class="caixa-pesquisa">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Insira sua localização" data-container-input>
+            <button class="fa-solid fa-magnifying-glass" data-pesquisa></button>
+        </div>
+
+        <div class="nao-encontrado" data-nao-encontrado>
+            <img src="img/404.png" alt="Não encontrada">
+            <p>Localização inválida! :/</p>
+        </div>
+
+        <div class="caixa-clima" data-caixa-clima>
+            <img src="" data-caixa-clima-img>
+            <p class="temperatura" data-caixa-clima-temperatura></p>
+            <p class="descricao" data-caixa-clima-descricao></p>
+        </div>
+    
+        <div class="detalhes-clima" data-clima-detalhes>
+            <div class="umidade">
+                <i class="fa-solid fa-water"></i>
+                <div class="texto">
+                    <span data-clima-detalhes-umidade></span>
+                    <p>Umidade</p>
+                </div>
+            </div>
+    
+            <div class="vento">
+                <i class="fa-solid fa-wind"></i>
+                <div class="texto">
+                    <span data-clima-detalhes-vento></span>
+                    <p>Vento</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
