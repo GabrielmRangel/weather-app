@@ -73,7 +73,7 @@ body{
 }
 
 .caixa-pesquisa i{
-    position: absolute;
+    /* position: absolute; */
     color: var(--cor-principal);
     font-size: 28px;
 }
